@@ -7,11 +7,12 @@ import time
 import shutil
 from pathlib import Path
 from typing import Optional
+import os
 
 import psutil
 import lmstudio
 
-LM_STUDIO_HOST = "192.168.50.2:1234"
+LM_STUDIO_HOST = os.getenv("LM_STUDIO_HOST", "192.168.50.2:1234")
 PROMPT = "Explain quantum computing in 200 words, covering qubits, superposition, and applications."
 MAX_TOKENS = 200
 

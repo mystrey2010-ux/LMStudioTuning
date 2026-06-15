@@ -3,8 +3,9 @@
 
 import json
 import requests
+import os
 
-LM_STUDIO_URL = "http://192.168.50.2:1234"
+LM_STUDIO_URL = os.getenv("LM_STUDIO_URL", "http://192.168.50.2:1234")
 BASE_DIR = "/home/mattwakeling/LMStudioTuning"
 
 def apply_config():
