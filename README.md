@@ -1,5 +1,14 @@
 # LLM Performance Optimizer for LM Studio
 
+## Configuration Report Generation
+
+```bash
+# Generate comprehensive LM Studio configuration report for current model
+python /home/mattwakeling/LMStudioTuning/regenerate_lmstudio_report.py
+```
+
+This generates `lmstudio_config_report.md` containing all configuration parameters, runtime settings, inference settings, and sampling parameters for the qwen/qwen3-coder-30b model.
+
 ## Setup
 
 ### Create Conda Environment
@@ -56,3 +65,4 @@ python /home/mattwakeling/LMStudioTuning/list_models.py
 - `backups/` - Timestamped backups of previous runs (results and reports)
 - `reports/performance_report.md` - Markdown report with detailed analysis and optimal configuration
 - `applied_config.json` - Optimal configuration applied to LM Studio for reuse
+- `lmstudio_config_report.md` - Configuration parameters and settings for the loaded model (regenerable)
