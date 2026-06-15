@@ -1,0 +1,15 @@
+{
+  "model": "qwen/qwen3-coder-30b",
+  "context_length": 65536,
+  "eval_batch_size": 2048,
+  "parallel": 1,
+  "flash_attention": true,
+  "offload_kv_cache_to_gpu": true,
+  "num_experts": null,
+  "llama_k_cache_quantization_type": "q8_0",
+  "llama_v_cache_quantization_type": "q8_0",
+  "gpu_layers": null,
+  "thread_count": 6,
+  "rope_scaling_type": null,
+  "mirostat": 0
+}

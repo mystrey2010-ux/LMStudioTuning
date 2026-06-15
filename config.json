@@ -1,0 +1,16 @@
+{
+  "target_model": "qwen/qwen3-coder-30b",
+  "max_vram_percent": 95,
+  "min_tps_floor": 45,
+  "inference_timeout_seconds": 600,
+  "load_timeout_seconds": 600,
+  "iterations_per_config": 1,
+  "expert_counts": ["false"],
+  "kv_cache_types": ["q5_1", "q8_0", "false", "f32", "f16", "q4_0", "q4_1", "iq4_nl", "q5_0"],
+  "batch_sizes": [2048],
+  "parallel_values": [1],
+  "gpu_layers": ["max"],
+  "thread_counts": [6],
+  "rope_scaling": ["none"],
+  "mirostat": [0]
+}

@@ -1,0 +1,600 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_1",
+        "llama_v_cache_quantization_type": "q5_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 62.02227300234628,
+        "vram_gb": 21.42,
+        "vram_pct": 89.0,
+        "cpu_pct": 3.3
+      }
+    },
+    {
+      "attempt": 2,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q8_0",
+        "llama_v_cache_quantization_type": "q8_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 77.72534150310078,
+        "vram_gb": 21.52,
+        "vram_pct": 90.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 3,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": null,
+        "llama_v_cache_quantization_type": null,
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 44.56678550712901,
+        "vram_gb": 21.73,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.8
+      }
+    },
+    {
+      "attempt": 4,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "f32",
+        "llama_v_cache_quantization_type": "f32",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 46.63582321436797,
+        "vram_gb": 21.71,
+        "vram_pct": 90.0,
+        "cpu_pct": 0.8
+      }
+    },
+    {
+      "attempt": 5,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "f16",
+        "llama_v_cache_quantization_type": "f16",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 67.62688762746241,
+        "vram_gb": 21.6,
+        "vram_pct": 90.0,
+        "cpu_pct": 5.0
+      }
+    },
+    {
+      "attempt": 6,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_0",
+        "llama_v_cache_quantization_type": "q4_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 67.46385446575601,
+        "vram_gb": 20.86,
+        "vram_pct": 87.0,
+        "cpu_pct": 2.5
+      }
+    },
+    {
+      "attempt": 7,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_1",
+        "llama_v_cache_quantization_type": "q4_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 67.5674190078763,
+        "vram_gb": 21.13,
+        "vram_pct": 88.0,
+        "cpu_pct": 1.7
+      }
+    },
+    {
+      "attempt": 8,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "iq4_nl",
+        "llama_v_cache_quantization_type": "iq4_nl",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 12.51941890112046,
+        "vram_gb": 20.99,
+        "vram_pct": 87.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 9,
+      "config": {
+        "context_length": 65536,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_0",
+        "llama_v_cache_quantization_type": "q5_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 67.94543477930831,
+        "vram_gb": 21.25,
+        "vram_pct": 89.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 10,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_1",
+        "llama_v_cache_quantization_type": "q5_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 67.48310124044265,
+        "vram_gb": 21.94,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 11,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q8_0",
+        "llama_v_cache_quantization_type": "q8_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 66.30811456814764,
+        "vram_gb": 21.93,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 12,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": null,
+        "llama_v_cache_quantization_type": null,
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 44.73651541466654,
+        "vram_gb": 21.86,
+        "vram_pct": 91.0,
+        "cpu_pct": 3.3
+      }
+    },
+    {
+      "attempt": 13,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "f32",
+        "llama_v_cache_quantization_type": "f32",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 41.997798544023695,
+        "vram_gb": 21.77,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 14,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "f16",
+        "llama_v_cache_quantization_type": "f16",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 61.33717345656178,
+        "vram_gb": 21.75,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 15,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_0",
+        "llama_v_cache_quantization_type": "q4_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 72.35136081807337,
+        "vram_gb": 21.75,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 16,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_1",
+        "llama_v_cache_quantization_type": "q4_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 68.7956425787221,
+        "vram_gb": 21.93,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 17,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "iq4_nl",
+        "llama_v_cache_quantization_type": "iq4_nl",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 15.506711187508177,
+        "vram_gb": 21.95,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 18,
+      "config": {
+        "context_length": 131072,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_0",
+        "llama_v_cache_quantization_type": "q5_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 72.562716014794,
+        "vram_gb": 21.83,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.8
+      }
+    },
+    {
+      "attempt": 19,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_1",
+        "llama_v_cache_quantization_type": "q5_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 65.83068393835332,
+        "vram_gb": 21.76,
+        "vram_pct": 91.0,
+        "cpu_pct": 3.3
+      }
+    },
+    {
+      "attempt": 20,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q8_0",
+        "llama_v_cache_quantization_type": "q8_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 64.0017616017743,
+        "vram_gb": 21.87,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 23,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "f16",
+        "llama_v_cache_quantization_type": "f16",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 58.19736459861439,
+        "vram_gb": 21.59,
+        "vram_pct": 90.0,
+        "cpu_pct": 0.0
+      }
+    },
+    {
+      "attempt": 24,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_0",
+        "llama_v_cache_quantization_type": "q4_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 64.76429972873679,
+        "vram_gb": 21.76,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.8
+      }
+    },
+    {
+      "attempt": 25,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q4_1",
+        "llama_v_cache_quantization_type": "q4_1",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 66.26156719614538,
+        "vram_gb": 21.62,
+        "vram_pct": 90.0,
+        "cpu_pct": 1.7
+      }
+    },
+    {
+      "attempt": 26,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "iq4_nl",
+        "llama_v_cache_quantization_type": "iq4_nl",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 13.383911381903763,
+        "vram_gb": 21.87,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.8
+      }
+    },
+    {
+      "attempt": 27,
+      "config": {
+        "context_length": 262144,
+        "eval_batch_size": 2048,
+        "parallel": 1,
+        "flash_attention": true,
+        "offload_kv_cache_to_gpu": true,
+        "num_experts": null,
+        "llama_k_cache_quantization_type": "q5_0",
+        "llama_v_cache_quantization_type": "q5_0",
+        "gpu_layers": null,
+        "thread_count": 6,
+        "rope_scaling_type": null,
+        "mirostat": 0
+      },
+      "metrics": {
+        "avg_tps": 64.1751373649677,
+        "vram_gb": 21.81,
+        "vram_pct": 91.0,
+        "cpu_pct": 0.0
+      }
+    }
+  ],
+  "best_tps": 77.72534150310078,
+  "best_config": {
+    "context_length": 65536,
+    "eval_batch_size": 2048,
+    "parallel": 1,
+    "flash_attention": true,
+    "offload_kv_cache_to_gpu": true,
+    "num_experts": null,
+    "llama_k_cache_quantization_type": "q8_0",
+    "llama_v_cache_quantization_type": "q8_0",
+    "gpu_layers": null,
+    "thread_count": 6,
+    "rope_scaling_type": null,
+    "mirostat": 0
+  },
+  "best_metrics": {
+    "avg_tps": 77.72534150310078,
+    "vram_gb": 21.52,
+    "vram_pct": 90.0,
+    "cpu_pct": 0.0
+  }
+}
